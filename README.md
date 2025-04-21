@@ -30,7 +30,7 @@ Terms are detected in three ways:
 - Two word phrases (bigrams) 
 - Three word phrases (trigrams)
 
-The addon intelligently filters out common words and only queries Wikipedia for likely medical terms.
+The addon filters out common words using your blocked words list to ensure you get focused and relevant tooltips.
 
 ## Configuration
 
