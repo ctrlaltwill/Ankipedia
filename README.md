@@ -1,5 +1,5 @@
 # Wikipedia Tooltips for Anki
-An Anki addon that automatically adds Wikipedia tooltips to medical terms in your cards.
+An Anki addon that automatically adds Wikipedia tooltips to terms in your cards.
 
 ![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Ankipedia_Demo.gif "Ankipedia Demo Image")
 
