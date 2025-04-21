@@ -7,8 +7,8 @@ An Anki addon that automatically adds Wikipedia tooltips to medical terms in you
 
 ### How it Works
 When reviewing cards, this addon:
-1. Scans any fields with the class 'Ankipedia' 
-3. Queries Wikipedia for definitions of those terms
+1. Scans any fields with the class 'ankipedia' 
+3. Queries Wikipedia for definitions of terms within fields with that class
 4. Adds interactive tooltips that show the Wikipedia summary and image of those terms hovering
 5. Saves results in a cache to avoid repeated API calls
 
