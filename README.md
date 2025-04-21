@@ -1,6 +1,8 @@
 # Wikipedia Tooltips for Anki
 An Anki addon that automatically adds Wikipedia tooltips to medical terms in your cards.
 
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/demo.png "Ankipedia Demo Image")
+
 ## How it Works
 When reviewing cards, this addon:
 1. Scans the answer text for medical terms and terminology
@@ -17,8 +19,6 @@ When reviewing cards, this addon:
   - Caches Wikipedia results
   - Batches API requests (max 50 concurrent)
   - Only processes new/changed content
-
-![Demo Image]([http://url/to/img.png](https://github.com/ctrlaltwill/Ankipedia/blob/main/demo.png?raw=true))
 
 ## Usage
 The addon works automatically - just review cards normally and hover over underlined terms to see definitions.
