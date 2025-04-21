@@ -1,7 +1,7 @@
 # Wikipedia Tooltips for Anki
 An Anki addon that automatically adds Wikipedia tooltips to terms in your cards.
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Ankipedia_Demo.gif "Ankipedia Demo Image")
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo.png "Ankipedia Demo Image")
 
 ## Overview 
 
@@ -51,3 +51,5 @@ Created by William Guy. For issues and feature requests, please file an issue on
 
 ### License 
 MIT License - feel free to modify and reuse with attribution.
+
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Ankipedia_Demo.gif "Ankipedia Demo Animation")
