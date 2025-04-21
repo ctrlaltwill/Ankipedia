@@ -1,26 +1,16 @@
 # Wikipedia Tooltips for Anki
 An Anki addon that automatically adds Wikipedia tooltips to medical terms in your cards.
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/demo.png "Ankipedia Demo Image")
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo.png "Ankipedia Demo Image")
 
 ## Overview 
 
 ### How it Works
 When reviewing cards, this addon:
-1. Scans the answer text for medical terms and terminology
-2. Queries Wikipedia for definitions of those terms
-3. Adds interactive tooltips that show the Wikipedia summary and image when hovering
-4. Saves results in a cache to avoid repeated API calls
-
-### Features
-- **Automatic Term Detection**: Intelligently identifies medical terms and phrases in your card content
-- **Rich Tooltips**: Shows Wikipedia summary text and thumbnail image in the tooltip 
-- **Smart Filtering**: Avoids common words and non-medical terms using built-in block lists
-- **Click-through**: Links to full Wikipedia articles for more details
-- **Performance Optimized**:
-  - Caches Wikipedia results
-  - Batches API requests (max 50 concurrent)
-  - Only processes new/changed content
+1. Scans any fields with the class 'Ankipedia' 
+3. Queries Wikipedia for definitions of those terms
+4. Adds interactive tooltips that show the Wikipedia summary and image of those terms hovering
+5. Saves results in a cache to avoid repeated API calls
 
 ### Usage
 The addon works automatically - just review cards normally and hover over underlined terms to see definitions.
@@ -29,22 +19,23 @@ Terms are detected in three ways:
 - Single words (unigrams)
 - Two word phrases (bigrams) 
 - Three word phrases (trigrams)
-
-The addon filters out common words using your blocked words list to ensure you get focused and relevant tooltips.
+- Four word phrases and longer are excluded to reduce calls to the Wikipedia API
 
 ## Configuration
 
 ### 1. How to Set Up Your Cards:
 In Anki, go to your card template
-In the front or back template, wrap the field you want to scan in a div with class="answer"
+In the front or back template, wrap the field you want to include with the class "ankipedia" (see below). When this field is visible on your screen the script that calls the Wikipedia tooltips will run. If you want it on the front and back of your cards you will need to add the class to both sides of the cards – similarly, you will need to add it to any different card types you also want to include.
+
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Installation.png "Ankipedia Demo Image")
 
 ### 2. Blocked Words
-You can customize which terms are blocked by editing the `BLOCKED_WORDS` and `BLOCKED_UNIGRAMS` arrays in `web.js`.
+You can customize which terms are blocked by editing the `BLOCKED_WORDS` and `BLOCKED_UNIGRAMS` arrays in `web.js`. This code includes comments explaining when to use each list as they both apply rules slightly differently.
 
 ### 3. Tips
-You can add the .answer class to multiple fields if needed
+You can add the .ankipedia class to multiple fields if needed
+The class is case sensitive, so use lower case 'ankipedia'
 The addon will only process new content when it changes
-Make sure the class name is exactly "answer" (case sensitive)
 The div can contain any Anki field or HTML content
 This setup requirement ensures the addon only processes relevant card content and avoids scanning the entire page unnecessarily.
 
