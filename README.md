@@ -1,5 +1,5 @@
 # Ankipedia – Wikipedia Tooltips in Anki
-An Anki addon that automatically adds Wikipedia tooltips to terms in your cards.
+Ankipedia is an Anki addon that adds helpful Wikipedia pop-ups to terms in your flashcards, making it easy to understand unfamiliar concepts while you study. Just hover over underlined words during reviews to see short definitions and images — no extra clicks or effort needed.
 
 ![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-Blank.png "Ankipedia Demo Image 1")
 
