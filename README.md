@@ -1,18 +1,20 @@
 # Ankipedia – Wikipedia Tooltips in Anki
 An Anki addon that automatically adds Wikipedia tooltips to terms in your cards.
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Invisible.png "Ankipedia Demo Image 1")
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-Blank.png "Ankipedia Demo Image 1")
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Visible.png "Ankipedia Demo Image 2")
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-Dark.png "Ankipedia Demo Image 2")
+
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-Light.png "Ankipedia Demo Image 1")
 
 ## Overview 
 
 ### How it Works
 When reviewing cards, this addon:
-1. Scans any fields with the class 'ankipedia' 
-3. Takes the content from those fields and queries Wikipedia for pages on that content
-4. Adds interactive tooltips that show the Wikipedia summary and image of those terms when hovering (if content is found)
-5. Saves results in a cache to avoid repeated API calls
+1. Scans card content based on your configuration
+2. Takes the content and queries Wikipedia for relevant pages
+3. Adds interactive tooltips showing Wikipedia summaries and images when hovering
+4. Saves results in a cache to avoid repeated API calls
 
 ### Usage
 The addon works automatically - just review cards normally and hover over underlined terms to see definitions. The queries to Wikipedia take a few seconds, a short card (<50 words) should get responses within one second, longer cards (50 to 150 words) will take a few seconds.
@@ -25,19 +27,27 @@ Terms are detected in three ways:
 
 ## Configuration
 
-### 1. How to Set Up Your Cards:
-In Anki, go to your card template and in the front or back template (or both), wrap the field you want to include with the class "ankipedia" (there is an example image below of this). When this field is visible on your screen the script that calls the Wikipedia tooltips will run. If you want it on the front and back of your cards you will need to add the class to both sides of the cards – similarly, you will need to add it to any different card types you also want to include.
+### 1. Accessing Options
+1. Open Anki
+2. Go to Tools > Ankipedia Options
+3. Configure your preferences:
+   - Wikipedia Language: Choose which language version of Wikipedia to query
+   - Class Name: Control which elements get tooltips (e.g. 'card' for all content)
+   - Theme: Light, Dark or Auto theme for tooltips
+   - Blocked Words: Terms that will never show tooltips
+   - Blocked Unigrams: Single words that won't show tooltips
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Installation.png "Ankipedia Demo Image")
-
-### 2. Blocked Words
-You can customize which terms are blocked by editing the `BLOCKED_WORDS` and `BLOCKED_UNIGRAMS` arrays in `web.js`. This code includes comments explaining when to use each list as they both apply rules slightly differently. In the future I would like to update this list to be a plain text file separate outside the main plugin script, but this is how it is currently!
+### 2. Setting Up Your Cards
+1. Choose where you want tooltips to appear:
+   - For all card content: Set Class Name to 'card' in options
+   - For specific fields: Add your chosen class name to those field wrappers
+   - You can use any valid HTML class name
 
 ### 3. Tips
-- You can add the .ankipedia class to multiple fields if needed
-- The class is case sensitive, so use lower case 'ankipedia'
+- You can apply tooltips to multiple areas by using the same class name
 - The addon will only process new content when it changes
-- The div can contain any Anki field or HTML content
+- Class names are case sensitive
+- The class can be added to any element containing text
 
 ## More Details 
 
