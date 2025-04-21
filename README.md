@@ -8,12 +8,12 @@ An Anki addon that automatically adds Wikipedia tooltips to medical terms in you
 ### How it Works
 When reviewing cards, this addon:
 1. Scans any fields with the class 'ankipedia' 
-3. Queries Wikipedia for definitions of terms within fields with that class
-4. Adds interactive tooltips that show the Wikipedia summary and image of those terms hovering
+3. Takes the content from those fields and queries Wikipedia for pages on that content
+4. Adds interactive tooltips that show the Wikipedia summary and image of those terms when hovering (if content is found)
 5. Saves results in a cache to avoid repeated API calls
 
 ### Usage
-The addon works automatically - just review cards normally and hover over underlined terms to see definitions.
+The addon works automatically - just review cards normally and hover over underlined terms to see definitions. The queries to Wikipedia take a few seconds, a short card (<50 words) should get responses within one second, longer cards (50 to 150 words) will take a few seconds.
 
 Terms are detected in three ways:
 - Single words (unigrams)
@@ -30,14 +30,13 @@ In the front or back template, wrap the field you want to include with the class
 ![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Installation.png "Ankipedia Demo Image")
 
 ### 2. Blocked Words
-You can customize which terms are blocked by editing the `BLOCKED_WORDS` and `BLOCKED_UNIGRAMS` arrays in `web.js`. This code includes comments explaining when to use each list as they both apply rules slightly differently.
+You can customize which terms are blocked by editing the `BLOCKED_WORDS` and `BLOCKED_UNIGRAMS` arrays in `web.js`. This code includes comments explaining when to use each list as they both apply rules slightly differently. In the future I would like to update this list to be a plain text file separate outside the main plugin script, but this is how it is currently!
 
 ### 3. Tips
-You can add the .ankipedia class to multiple fields if needed
-The class is case sensitive, so use lower case 'ankipedia'
-The addon will only process new content when it changes
-The div can contain any Anki field or HTML content
-This setup requirement ensures the addon only processes relevant card content and avoids scanning the entire page unnecessarily.
+- You can add the .ankipedia class to multiple fields if needed
+- The class is case sensitive, so use lower case 'ankipedia'
+- The addon will only process new content when it changes
+- The div can contain any Anki field or HTML content
 
 ## More Details 
 
