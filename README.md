@@ -18,6 +18,8 @@ When reviewing cards, this addon:
   - Batches API requests (max 50 concurrent)
   - Only processes new/changed content
 
+![Demo Image]([http://url/to/img.png](https://github.com/ctrlaltwill/Ankipedia/blob/main/demo.png?raw=true))
+
 ## Usage
 The addon works automatically - just review cards normally and hover over underlined terms to see definitions.
 
