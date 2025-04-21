@@ -24,8 +24,7 @@ Terms are detected in three ways:
 ## Configuration
 
 ### 1. How to Set Up Your Cards:
-In Anki, go to your card template
-In the front or back template, wrap the field you want to include with the class "ankipedia" (see below). When this field is visible on your screen the script that calls the Wikipedia tooltips will run. If you want it on the front and back of your cards you will need to add the class to both sides of the cards – similarly, you will need to add it to any different card types you also want to include.
+In Anki, go to your card template and in the front or back template (or both), wrap the field you want to include with the class "ankipedia" (there is an example image below of this). When this field is visible on your screen the script that calls the Wikipedia tooltips will run. If you want it on the front and back of your cards you will need to add the class to both sides of the cards – similarly, you will need to add it to any different card types you also want to include.
 
 ![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Installation.png "Ankipedia Demo Image")
 
