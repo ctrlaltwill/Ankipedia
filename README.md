@@ -48,14 +48,14 @@ You can also right-click any underlined term to:
 3. Configure your preferences across 4 tabs:
 
 #### Setup
-- Wikipedia Language: Choose which language version of Wikipedia to query (with flag icons)
+- Wikipedia Language: Choose which language version of Wikipedia to query (currently the top-45 Wikipedia languages are included
 - Class Name: Control which elements get tooltips (e.g. 'card' for all content)
 
 #### Appearance  
 - Theme: Light, Dark or Auto theme for tooltips
 - Term Border Style: Solid, Dotted or None
-- Border Thickness: Adjust from 1-3px
-- Border Color: Customize the underline color
+- Underline Thickness: Adjust from 1-3px
+- Underline Color: Customize the underline color
 - Tooltip Button Colors: Customize background and text colors
 
 #### Blocked Words
