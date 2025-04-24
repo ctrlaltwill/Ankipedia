@@ -1,13 +1,21 @@
 # Ankipedia – Wikipedia Tooltips in Anki
 Ankipedia is an Anki addon that adds helpful Wikipedia pop-ups to terms in your flashcards, making it easy to understand unfamiliar concepts while you study. Just hover over underlined words during reviews to see short definitions and images — no extra clicks or effort needed.
+<br><br>
+<table>
+  <tr>
+    <td colspan="3">
+      <img src="https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-2.png" alt="Ankipedia Demo Image 2" style="width: 100%; height: auto;">
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-1.png" alt="Ankipedia Demo Image 1" style="width: 100%; height: auto;"></td>
+    <td><img src="https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-3.png" alt="Ankipedia Demo Image 3" style="width: 100%; height: auto;"></td>
+    <td><img src="https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-4.png" alt="Ankipedia Demo Image 4" style="width: 100%; height: auto;"></td>
+  </tr>
+</table>
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-1.png "Ankipedia Demo Image 1")
-
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-2.png "Ankipedia Demo Image 2")
-
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-3.png "Ankipedia Demo Image 3")
-
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-4.png "Ankipedia Demo Image 4")
+<i>Screenshots demonstrating the Ankipedia base display, tooltips, theme options and word/unigram deletions.</i>
+<br><br>
 
 ## Overview 
 
@@ -71,11 +79,15 @@ Information about the addon and links to resources
 - Highlight and right-click terms to quickly add them to blocked lists
 - Use the appearance tab to match your card styling
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-1.png "Ankipedia Settings 1")
+<table>
+  <tr>
+    <td><img src="https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-1.png" alt="Ankipedia Settings" style="min-width:400px; width:100%; height:auto;"></td>
+    <td><img src="https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-2.png" alt="Ankipedia Settings" style="min-width:400px; width:100%; height:auto;"></td>
+    <td><img src="https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-3.png" alt="Ankipedia Settings" style="min-width:400px; width:100%; height:auto;"></td>
+  </tr>
+</table>
+<i>Screenshots demonstrating the Ankipedia setup and some of the customisation features.</i>
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-2.png "Ankipedia Settings 2")
-
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-3.png "Ankipedia Settings 3")
 
 ## More Details 
 
