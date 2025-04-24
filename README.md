@@ -1,11 +1,13 @@
 # Ankipedia – Wikipedia Tooltips in Anki
 Ankipedia is an Anki addon that adds helpful Wikipedia pop-ups to terms in your flashcards, making it easy to understand unfamiliar concepts while you study. Just hover over underlined words during reviews to see short definitions and images — no extra clicks or effort needed.
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-Blank.png "Ankipedia Demo Image 1")
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-1.png "Ankipedia Demo Image 1")
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-Dark.png "Ankipedia Demo Image 2")
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-2.png "Ankipedia Demo Image 2")
 
-![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-Light.png "Ankipedia Demo Image 1")
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-3.png "Ankipedia Demo Image 3")
+
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Demo-4.png "Ankipedia Demo Image 4")
 
 ## Overview 
 
@@ -25,17 +27,35 @@ Terms are detected in three ways:
 - Three word phrases (trigrams)
 - Four word phrases and longer are excluded to reduce calls to the Wikipedia API
 
+You can also right-click any underlined term to:
+- Copy the term text
+- Add to Blocked Words (blocks the term and any phrases containing it)  
+- Add to Blocked Unigrams (only blocks the exact term when it appears alone)
+
 ## Configuration
 
 ### 1. Accessing Options
 1. Open Anki
 2. Go to Tools > Ankipedia Options
-3. Configure your preferences:
-   - Wikipedia Language: Choose which language version of Wikipedia to query
-   - Class Name: Control which elements get tooltips (e.g. 'card' for all content)
-   - Theme: Light, Dark or Auto theme for tooltips
-   - Blocked Words: Terms that will never show tooltips
-   - Blocked Unigrams: Single words that won't show tooltips
+3. Configure your preferences across 4 tabs:
+
+#### Setup
+- Wikipedia Language: Choose which language version of Wikipedia to query (with flag icons)
+- Class Name: Control which elements get tooltips (e.g. 'card' for all content)
+
+#### Appearance  
+- Theme: Light, Dark or Auto theme for tooltips
+- Term Border Style: Solid, Dotted or None
+- Border Thickness: Adjust from 1-3px
+- Border Color: Customize the underline color
+- Tooltip Button Colors: Customize background and text colors
+
+#### Blocked Words
+- Blocked Words: Terms that will never show tooltips (includes phrases containing these words)
+- Blocked Unigrams: Single words that won't show tooltips when they appear alone
+
+#### About
+Information about the addon and links to resources
 
 ### 2. Setting Up Your Cards
 1. Choose where you want tooltips to appear:
@@ -48,6 +68,14 @@ Terms are detected in three ways:
 - The addon will only process new content when it changes
 - Class names are case sensitive
 - The class can be added to any element containing text
+- Highlight and right-click terms to quickly add them to blocked lists
+- Use the appearance tab to match your card styling
+
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-1.png "Ankipedia Settings 1")
+
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-2.png "Ankipedia Settings 2")
+
+![alt text](https://github.com/ctrlaltwill/Ankipedia/blob/main/Images/Settings-3.png "Ankipedia Settings 3")
 
 ## More Details 
 
@@ -61,5 +89,18 @@ Terms are detected in three ways:
 ### Support
 Created by William Guy. For issues and feature requests, please file an issue on GitHub.
 
-### License 
-MIT License - feel free to modify and reuse with attribution.
+If you find this addon helpful, consider supporting development:
+
+<a href="https://www.buymeacoffee.com/williamguy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+## Acknowledgements
+
+### Wikipedia
+Content accessed through Wikipedia's API is licensed under [Creative Commons Attribution-ShareAlike 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc.
+
+### Circle Flags
+Flag icons used in the language selector are from [Circle Flags](https://github.com/HatScripts/circle-flags/) by HatScripts, licensed under MIT License.
+
+## License
+
+This addon is licensed under the GNU General Public License v3.0.
