@@ -96,7 +96,6 @@ Information about the addon and links to resources
 - Tooltip UI built with Tippy.js
 - MutationObserver watches for card content changes
 - Handles HTML sanitization and entity decoding
-- Prevents tooltip nesting/overlapping
 
 ### Support
 Created by William Guy. For issues and feature requests, please file an issue on GitHub.
@@ -109,9 +108,6 @@ If you find this addon helpful, consider supporting development:
 
 ### Wikipedia
 Content accessed through Wikipedia's API is licensed under [Creative Commons Attribution-ShareAlike 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc.
-
-### Circle Flags
-Flag icons used in the language selector are from [Circle Flags](https://github.com/HatScripts/circle-flags/) by HatScripts, licensed under MIT License.
 
 ## License
 
